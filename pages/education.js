@@ -14,7 +14,7 @@ function Education() {
       //All page code goes here.
       
     
-    <div className="mx-auto bg-black bg-opacity-50 backdrop-blur-sm rounded drop-shadow-lg text-center w-auto h-96 flex-col py-24">
+    <div className="mx-auto bg-black bg-opacity-50 backdrop-blur-sm rounded drop-shadow-lg text-center w-auto h-96 flex-col py-24" id="education">
        <h1 className="text-4xl mt-5 mb-10 m-10"><b>Education</b></h1>  
        <h2 className="text-2xl m-10">Coming Soon</h2>
    </div> 

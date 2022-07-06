@@ -17,7 +17,7 @@ function CryptoWallet() {
     ) : (
       //All crypto-wallet code goes here.
       <Fragment>
-      <div className="mx-auto bg-black bg-opacity-50 backdrop-blur-sm rounded drop-shadow-lg text-center w-auto h-auto flex-col py-24 mb-10">
+      <div className="mx-auto bg-black bg-opacity-50 backdrop-blur-sm rounded drop-shadow-lg text-center w-auto h-auto flex-col py-24 mb-10" id="cryptowallet">
        
        <h1 className="text-4xl mt-5 mb-10 m-10"><b>Gas Tank</b></h1>
        <h1 className="text-2xl m-3"><b>Placeholder: Display Wallet's Gas </b></h1>
@@ -31,7 +31,7 @@ function CryptoWallet() {
           </button>     
    </div>
 
-   <div className="container mx-auto bg-black bg-opacity-50 backdrop-blur-sm rounded-lg drop-shadow-lg text-center w-1/2 h-auto flex-col p-10">
+   <div className="container mx-auto bg-black bg-opacity-50 backdrop-blur-sm rounded-lg drop-shadow-lg text-center md:w-2/3 h-auto flex-col p-10">
       <h1 className="text-4xl">FAQs</h1>
       <ul className="text-xl text-left divide-y-2">
         <li className="mb-3">

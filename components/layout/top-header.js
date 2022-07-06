@@ -4,7 +4,7 @@ import UserDetails from './user-details'
 function TopHeader() {
   return (
     <Fragment>
-    <div className='justify-between flex m-3'>
+    <div className='justify-between flex m-3 bg-black rounded-xl backdrop-blur-sm bg-opacity-40 sm:bg-transparent px-3'>
     <div>
     <h1 className='text-xl'>Gas Tank</h1>
     <h2>0.00 BNB</h2>

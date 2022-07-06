@@ -17,7 +17,7 @@ function RedeemCard() {
       </div>
     ) : (
       //All page code goes here.
-      <div className="mx-auto bg-black bg-opacity-50 backdrop-blur-sm rounded drop-shadow-lg text-center w-auto h-auto flex-col py-24">
+      <div className="mx-auto bg-black bg-opacity-50 backdrop-blur-sm rounded drop-shadow-lg text-center w-auto h-auto flex-col py-24" id="redeem">
        
        <h1 className="text-4xl mt-5 mb-10 m-10"><b>Redeem Cryft Cards</b></h1>  
        <form>
