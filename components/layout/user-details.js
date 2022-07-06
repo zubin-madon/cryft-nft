@@ -8,8 +8,8 @@ import { CHAIN_NAMESPACES } from "@web3auth/base";
 function UserDetails() {
 
 const { isAuthenticated, user } = useMoralis();
-const [username, setUsername] = useState('bla')
-const [userEmail, setUserEmail] = useState('blu')
+const [username, setUsername] = useState('')
+const [userEmail, setUserEmail] = useState('')
 
 const { switchNetwork, chainId } = useChain();
 // const setWalletProvider = useCallback(
@@ -55,7 +55,7 @@ useEffect(()=>{
       const name = userInfo.name
       const email = userInfo.email
       setUserInfo(name, email);
-      console.log(typeof username, typeof email) 
+      console.log(userEmail)
     } 
     catch (error) {
       console.error("errrrroooooorrrrrrrrrrr"+error);
@@ -64,7 +64,7 @@ useEffect(()=>{
     }
   }
   init();
-}, [isAuthenticated, user]);
+}, [isAuthenticated, user, username]);
 
 
   return (

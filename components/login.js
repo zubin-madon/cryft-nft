@@ -32,7 +32,7 @@ function Login() {
   return (
     <Fragment>
       <div className="bg-black bg-opacity-50 backdrop-blur-sm rounded drop-shadow-lg text-center w-auto h-auto">
-        <Image src="/android-chrome-512x512.png" layout="intrinsic" width={192} height={192} />
+        <Image src="/android-chrome-512x512.png" layout="intrinsic" width={192} height={192} alt="Cryft Logo" />
           <h1 className="text-4xl mt-5 mb-10 m-10">Cryft Cards</h1>  
           <h2 className="text-2xl m-10">Welcome to the Moon</h2>
        
