@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { MoralisProvider, useMoralis } from "react-moralis";
 import Login from '../components/login';
 import { Fragment, useEffect, useState } from 'react';
+import UserDetails from '../components/layout/user-details';
 
 
 export default function Home() {
@@ -11,8 +12,6 @@ export default function Home() {
       await logout();
       console.log("logged out");
     };
-
-
   
     return (
       <Fragment>
@@ -47,7 +46,7 @@ export default function Home() {
           </div>
         ) : (
           <div className="text-2xl">
-            <h1 className="text-white"> Authentication complete! </h1>
+            <h1 className="text-white flex">Welcome&nbsp; <UserDetails/>!</h1>
       
           </div>
         )}

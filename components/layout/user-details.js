@@ -12,13 +12,6 @@ const [username, setUsername] = useState('')
 const [userEmail, setUserEmail] = useState('')
 
 const { switchNetwork, chainId } = useChain();
-// const setWalletProvider = useCallback(
-//   (web3authProvider: SafeEventEmitterProvider) => {
-//     const walletProvider = getWalletProvider(chain, web3authProvider, uiConsole);
-//     setProvider(walletProvider);
-//   },
-//   [chain]
-// );
 
 useEffect(()=>{
   
@@ -30,7 +23,7 @@ useEffect(()=>{
     try {
       const { Web3Auth } = await import("@web3auth/web3auth");
       const { OpenloginAdapter } = await import("@web3auth/openlogin-adapter");
-      const clientId = "BON5amDs3TtsrzOwRgYuP25eFyR5jsb0XegcAQ9Z2NUX99r07XQe5mrTNo4s2auNxszIbkgmuPg54bXM4ow3U9w";
+      const clientId = "BON5amDs3TtsrzOwRgYuP25eFyR5jsb0XegcAQ9Z2NUX99r07XQe5mrTNo4s2auNxszIbkgmuPg54bXM4ow3U9w"
       const web3AuthInstance = new Web3Auth({
         chainConfig: { chainNamespace: CHAIN_NAMESPACES.EIP155, chainId: "0x38" },
         clientId,
@@ -41,12 +34,6 @@ useEffect(()=>{
       const adapter = new OpenloginAdapter({ adapterSettings: { network: "mainnet", clientId } });
       web3AuthInstance.configureAdapter(adapter);
       await web3AuthInstance.initModal();
-      // const web3auth = new Web3Auth({
-      //   chainConfig: { chainNamespace: CHAIN_NAMESPACES.EIP155, chainId: "0x38" },
-      //   authMode: "DAPP",
-      //   clientId: clientId,
-      //   enableLogging: true
-      // });
       console.log("this line before connect")
       const connected = await web3AuthInstance.connect();
       console.log("connect worked" + connected)
@@ -69,8 +56,7 @@ useEffect(()=>{
 
   return (
     <div>
-    {username}
-    {(isAuthenticated)?<h6>{user.get("ethAddress").slice(0,5)+"..."+user.get("ethAddress").slice(-4)}</h6>: <h6>Address:</h6>}
+    {username}  
     </div>
   )
 }

@@ -16,8 +16,7 @@ function Login() {
     if (!isAuthenticated) {
       await authenticate({
         provider: "web3Auth",
-        clientId:
-          "BON5amDs3TtsrzOwRgYuP25eFyR5jsb0XegcAQ9Z2NUX99r07XQe5mrTNo4s2auNxszIbkgmuPg54bXM4ow3U9w",
+        clientId: "BON5amDs3TtsrzOwRgYuP25eFyR5jsb0XegcAQ9Z2NUX99r07XQe5mrTNo4s2auNxszIbkgmuPg54bXM4ow3U9w",
         signingMessage: "Log in using Moralis",
       })
       .catch(function (error) {
