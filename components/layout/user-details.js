@@ -23,7 +23,7 @@ useEffect(()=>{
     try {
       const { Web3Auth } = await import("@web3auth/web3auth");
       const { OpenloginAdapter } = await import("@web3auth/openlogin-adapter");
-      const clientId = "BON5amDs3TtsrzOwRgYuP25eFyR5jsb0XegcAQ9Z2NUX99r07XQe5mrTNo4s2auNxszIbkgmuPg54bXM4ow3U9w"
+      const clientId = "BHf2Rd_AzwufYCifFC81PaeXwJ0NW9BvLVCkTikc8msr_JFb5qkaeFzSlc1G2x2rMEDnfTNSOT4cmi9N3a0qgW8"
       const web3AuthInstance = new Web3Auth({
         chainConfig: { chainNamespace: CHAIN_NAMESPACES.EIP155, chainId: "0x38" },
         clientId,
